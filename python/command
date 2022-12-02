@@ -6,3 +6,16 @@ export PATH=${PATH}:/opt/homebrew/Cellar/python@3.10/3.10.8/bin
 alias python="/opt/homebrew/Cellar/python@3.10/3.10.8/bin/python3"
 alias pip="/opt/homebrew/Cellar/python@3.10/3.10.8/bin/pip3"
 source ~/.bash_profile
+
+# MacOs 下Pip 换源->
+cd ~
+mkdir .pip	
+cd .pip  
+touch pip.conf 
+vi pip.conf 
+# 写入配置
+[global]
+index-url = http://mirrors.aliyun.com/pypi/simple/
+[install]
+trusted-host = mirrors.aliyun.com
+#换源结束
