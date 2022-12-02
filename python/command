@@ -1,0 +1,8 @@
+homebrew install python
+ 
+macos air M2 core 13.0.1
+vim ~/.bash_profile
+export PATH=${PATH}:/opt/homebrew/Cellar/python@3.10/3.10.8/bin
+alias python="/opt/homebrew/Cellar/python@3.10/3.10.8/bin/python3"
+alias pip="/opt/homebrew/Cellar/python@3.10/3.10.8/bin/pip3"
+source ~/.bash_profile
